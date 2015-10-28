@@ -1,5 +1,5 @@
 # react-csstransitgroup
-Replacement for [React's css transition group addon](https://facebook.github.io/react/docs/animation.html). It's API and feature set are much simpler, but is has far less dependacies than React's does.
+Replacement for [React's css transition group addon](https://facebook.github.io/react/docs/animation.html). It's API and feature set are much simpler, but is has far less dependacies than React's does. And it's only a 100 LOC!
 
 ### install
 
