@@ -1,0 +1,30 @@
+{
+  "name": "react-csstransitgroup",
+  "version": "1.0.0",
+  "description": "Replacement for React's css transition group addon",
+  "main": "cssTransitGroup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stolksdorf/react-csstransitgroup.git"
+  },
+  "keywords": [
+    "react",
+    "css",
+    "animation",
+    "transition"
+  ],
+  "author": "stolksdorf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stolksdorf/react-csstransitgroup/issues"
+  },
+  "homepage": "https://github.com/stolksdorf/react-csstransitgroup#readme",
+  "dependencies": {
+    "classnames": "^2.2.0",
+    "lodash": "^3.10.1",
+    "react": "^0.14.1"
+  }
+}
