@@ -24,7 +24,7 @@
   "homepage": "https://github.com/stolksdorf/react-csstransitgroup#readme",
   "dependencies": {
     "classnames": "^2.2.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.6.1",
     "react": "^0.14.1"
   }
 }
