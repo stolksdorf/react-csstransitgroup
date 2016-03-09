@@ -13,13 +13,13 @@ var CssTransitGroup = React.createClass({
 	},
 	getInitialState: function() {
 		return {
-			children: _.indexBy(this.props.children, 'key'),
+			children: _.keyBy(this.props.children, 'key'),
 			transitClasses : {}
 		};
 	},
 	componentWillReceiveProps: function(nextProps){
 		var self = this;
-		var newChildren = _.indexBy(nextProps.children, 'key');
+		var newChildren = _.keyBy(nextProps.children, 'key');
 
 		var childrenEntering = _.filter(newChildren, function(child, key){
 			return !self.state.children[key];
