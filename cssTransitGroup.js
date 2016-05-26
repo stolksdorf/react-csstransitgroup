@@ -2,6 +2,14 @@ var React = require('react');
 var _ = require('lodash');
 var cx = require('classnames');
 
+var keyChildren = function(children){
+	var tempChildren = (_.isArray(children) ? children : [children]);
+	return _.reduce(tempChildren, function(r, child){
+		r[child.key] = child;
+		return r;
+	}, {});
+}
+
 var CssTransitGroup = React.createClass({
 	timeouts : [],
 	getDefaultProps: function() {
@@ -13,14 +21,13 @@ var CssTransitGroup = React.createClass({
 	},
 	getInitialState: function() {
 		return {
-			children: _.keyBy(this.props.children, 'key'),
+			children: keyChildren(this.props.children),
 			transitClasses : {}
 		};
 	},
 	componentWillReceiveProps: function(nextProps){
 		var self = this;
-		var newChildren = _.keyBy(nextProps.children, 'key');
-
+		var newChildren = keyChildren(nextProps.children);
 		var childrenEntering = _.filter(newChildren, function(child, key){
 			return !self.state.children[key];
 		})
